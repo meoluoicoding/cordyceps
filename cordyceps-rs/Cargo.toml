@@ -1,0 +1,17 @@
+[package]
+name = "cordyceps"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cordyceps"
+path = "src/main.rs"
+
+[[bin]]
+name = "bench"
+path = "src/bench.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
